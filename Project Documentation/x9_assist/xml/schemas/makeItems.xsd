@@ -1,0 +1,33 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="x9make">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="copyright"/>
+        <xs:element type="xs:string" name="product"/>
+        <xs:element type="xs:string" name="release"/>
+        <xs:element type="xs:string" name="timestamp"/>
+        <xs:element name="makeFields">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="field" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:byte" name="fieldNumber"/>
+                    <xs:element type="xs:byte" name="csvColumn" minOccurs="0"/>
+                    <xs:element type="xs:int" name="numericValue" minOccurs="0"/>
+                    <xs:element type="xs:byte" name="increment" minOccurs="0"/>
+                    <xs:element type="xs:string" name="stringValue" minOccurs="0"/>
+                    <xs:element type="xs:string" name="assignSequentialValues" minOccurs="0"/>
+                    <xs:element type="xs:short" name="amountValue" minOccurs="0"/>
+                    <xs:element type="xs:byte" name="amountIncrement" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

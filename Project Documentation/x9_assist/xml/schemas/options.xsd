@@ -1,0 +1,193 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="x9options">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="copyright"/>
+        <xs:element type="xs:string" name="product"/>
+        <xs:element type="xs:string" name="release"/>
+        <xs:element type="xs:string" name="timestamp"/>
+        <xs:element name="x9C">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="x9configuration"/>
+              <xs:element type="xs:string" name="x9extensionUser1"/>
+              <xs:element type="xs:string" name="x9extensionUser2"/>
+              <xs:element type="xs:string" name="x9extensionUser3"/>
+              <xs:element type="xs:string" name="x9extensionUser4"/>
+              <xs:element type="xs:string" name="x9extensionUser5"/>
+              <xs:element type="xs:string" name="x9extensionUser6"/>
+              <xs:element type="xs:string" name="defaultWriterCharacterSet"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="validation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="applyEditsToUserFields"/>
+              <xs:element type="xs:string" name="applyEditsToReservedFields"/>
+              <xs:element type="xs:string" name="applyEnhancedMicrOnusRules"/>
+              <xs:element type="xs:byte" name="maximumFileSizeInMB"/>
+              <xs:element type="xs:byte" name="maximumChecksPerFile"/>
+              <xs:element type="xs:byte" name="maximumChecksPerCashLetter"/>
+              <xs:element type="xs:byte" name="maximumChecksPerBundle"/>
+              <xs:element type="xs:byte" name="minimumImageSizeInBytes"/>
+              <xs:element type="xs:byte" name="maximumImageSizeInBytes"/>
+              <xs:element type="xs:byte" name="maximumCombinedImageSizeInBytes"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="paths">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="defaultSaveToOpenPath"/>
+              <xs:element type="xs:string" name="defaultOpenPath"/>
+              <xs:element type="xs:string" name="defaultSavePath"/>
+              <xs:element type="xs:string" name="defaultImportPath"/>
+              <xs:element type="xs:string" name="defaultExportPath"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="files">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="x9rulesFile"/>
+              <xs:element type="xs:string" name="tiffrulesFile"/>
+              <xs:element type="xs:string" name="messagesFile"/>
+              <xs:element type="xs:string" name="abaFile"/>
+              <xs:element type="xs:string" name="configFile"/>
+              <xs:element type="xs:string" name="mapFile"/>
+              <xs:element type="xs:string" name="modCheckFile"/>
+              <xs:element type="xs:string" name="optionsFile"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fonts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="proportionalFont"/>
+              <xs:element type="xs:string" name="nonProportionalFont"/>
+              <xs:element type="xs:string" name="handwritingFont"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="xml">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="listXmlx9RulesToLog"/>
+              <xs:element type="xs:string" name="listXmlTiffRulesToLog"/>
+              <xs:element type="xs:string" name="listXmlTiffTagEntriesToLog"/>
+              <xs:element type="xs:string" name="listXmlErrorMessagesToLog"/>
+              <xs:element type="xs:byte" name="xmlMinimumX9RecordCount"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="trace">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="traceSdk"/>
+              <xs:element type="xs:string" name="traceEditErrors"/>
+              <xs:element type="xs:string" name="traceBeforeAndAfter"/>
+              <xs:element type="xs:string" name="traceHexprintErrors"/>
+              <xs:element type="xs:string" name="traceEofbValidationProcessFlow"/>
+              <xs:element type="xs:byte" name="traceMaxErrors"/>
+              <xs:element type="xs:byte" name="traceMaxImages"/>
+              <xs:element type="xs:short" name="traceMaxSystemErrorsToAbort"/>
+              <xs:element type="xs:byte" name="traceBeforeCount"/>
+              <xs:element type="xs:short" name="traceReaderBytesOnFailure"/>
+              <xs:element type="xs:byte" name="traceEofbFailuresCount"/>
+              <xs:element type="xs:byte" name="traceLogRetentionDays"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="gui">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="guiHexViewerTabEnabled"/>
+              <xs:element type="xs:string" name="guiLookAndFeel"/>
+              <xs:element type="xs:string" name="guiShowToolbarText"/>
+              <xs:element type="xs:string" name="guiTabIcons"/>
+              <xs:element type="xs:string" name="guiTabbedPanelTabPosition"/>
+              <xs:element type="xs:string" name="guiShowCheckIsnInTree"/>
+              <xs:element type="xs:short" name="guiScreensizeMaxWidth"/>
+              <xs:element type="xs:short" name="guiScreensizeMaxHeight"/>
+              <xs:element type="xs:short" name="guiFileChooserWidth"/>
+              <xs:element type="xs:short" name="guiFileChooserHeight"/>
+              <xs:element type="xs:byte" name="guiGcFrequency"/>
+              <xs:element type="xs:int" name="guiErrorDetailRowLimit"/>
+              <xs:element type="xs:int" name="guiItemRowLimit"/>
+              <xs:element type="xs:int" name="guiFilterRowLimit"/>
+              <xs:element type="xs:short" name="guiDefaultRowLimit"/>
+              <xs:element type="xs:byte" name="guiMaximumTextFileInMb"/>
+              <xs:element type="xs:byte" name="guiMaximumCachedImages"/>
+              <xs:element type="xs:byte" name="guiToolBarIconSize"/>
+              <xs:element type="xs:short" name="guiNumberOfChecksToMake"/>
+              <xs:element type="xs:int" name="guiAlternateTableRGB"/>
+              <xs:element type="xs:int" name="guiAlternateTreeRGB"/>
+              <xs:element type="xs:byte" name="guiMouseRolloverRGB"/>
+              <xs:element type="xs:int" name="guiModifyActiveRowRGB"/>
+              <xs:element type="xs:short" name="guiModifiedRowRGB"/>
+              <xs:element type="xs:byte" name="guiUnvalidatedModificationsRGB"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="scrub">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:int" name="scrubOriginationAbaValue"/>
+              <xs:element type="xs:int" name="scrubDestinationAbaValue"/>
+              <xs:element type="xs:int" name="scrubEndorsementAbaValue"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sdk">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="sdkNumberOfThreads"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="draftCheck">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="draftCheckName"/>
+              <xs:element type="xs:string" name="draftCheckAddress0"/>
+              <xs:element type="xs:string" name="draftCheckAddress1"/>
+              <xs:element type="xs:string" name="draftCheckAddress2"/>
+              <xs:element type="xs:string" name="draftCheckPayeeName"/>
+              <xs:element type="xs:string" name="draftCheckBankName"/>
+              <xs:element type="xs:string" name="draftCheckMemoLine"/>
+              <xs:element type="xs:string" name="draftCheckEndorsmentHeader"/>
+              <xs:element type="xs:string" name="draftCheckSignBelowLine"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="backup">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="backupEnabled"/>
+              <xs:element type="xs:string" name="backupOnEveryRun"/>
+              <xs:element type="xs:byte" name="backupRetentionDays"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reporting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="pdfViewer"/>
+              <xs:element type="xs:byte" name="reportRetentionDays"/>
+              <xs:element type="xs:int" name="reportWarningForLargeRowCount"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="branding">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="brandedWebButton"/>
+              <xs:element type="xs:anyURI" name="brandedWebAddress"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

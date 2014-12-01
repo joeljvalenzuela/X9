@@ -1,0 +1,51 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="x9rules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="x9Controls">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="characterSet"/>
+              <xs:element type="xs:short" name="maximumFileSize"/>
+              <xs:element type="xs:string" name="fieldZeroPresence"/>
+              <xs:element type="xs:string" name="fieldZeroFormat"/>
+              <xs:element type="xs:string" name="multipleLogicalFilesAllowed"/>
+              <xs:element type="xs:int" name="bufferSize"/>
+              <xs:element type="xs:short" name="recordSize"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="records">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="x9record" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="type"/>
+                    <xs:element type="xs:byte" name="format"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="length"/>
+                    <xs:element type="xs:string" name="location" minOccurs="0"/>
+                    <xs:element type="xs:string" name="comment" minOccurs="0"/>
+                    <xs:element name="field" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType mixed="true">
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="item"/>
+                          <xs:element type="xs:string" name="edit"/>
+                          <xs:element type="xs:string" name="values"/>
+                          <xs:element type="xs:string" name="validate"/>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="variableLengthDescriptor"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

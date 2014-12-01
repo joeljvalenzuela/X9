@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x9map>
+ <copyright>X9Ware LLC 2012</copyright>
+ <product>X9Assist</product>
+ <release>R2.06</release>
+ <documentIdentifier>x9map</documentIdentifier>
+ <timestamp>20130708_072752_233</timestamp>
+ <mappings>
+  <map>
+   <originationRouting>all</originationRouting>
+   <destinationRouting>all</destinationRouting>
+   <standardLevel>03</standardLevel>
+   <ucdIndicator>1</ucdIndicator>
+   <configurationName>x9.100-187_UCD</configurationName>
+  </map>
+  <map>
+   <originationRouting>all</originationRouting>
+   <destinationRouting>all</destinationRouting>
+   <standardLevel>03</standardLevel>
+   <ucdIndicator>C</ucdIndicator>
+   <configurationName>x9.Ccd</configurationName>
+  </map>
+  <map>
+   <originationRouting>all</originationRouting>
+   <destinationRouting>all</destinationRouting>
+   <standardLevel>03</standardLevel>
+   <ucdIndicator>P</ucdIndicator>
+   <configurationName>x9.CcdPrint</configurationName>
+  </map>
+  <map>
+   <originationRouting>all</originationRouting>
+   <destinationRouting>all</destinationRouting>
+   <standardLevel>all</standardLevel>
+   <ucdIndicator>all</ucdIndicator>
+   <configurationName>x9.37</configurationName>
+  </map>
+ </mappings>
+</x9map>
+

@@ -1,0 +1,74 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="x9Generate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="copyright"/>
+        <xs:element type="xs:string" name="product"/>
+        <xs:element type="xs:string" name="release"/>
+        <xs:element type="xs:string" name="timestamp"/>
+        <xs:element name="generateFields">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="fileSpec"/>
+              <xs:element type="xs:string" name="fileType"/>
+              <xs:element type="xs:string" name="fileMode"/>
+              <xs:element type="xs:string" name="isDateRefresh"/>
+              <xs:element type="xs:string" name="imageConstruction"/>
+              <xs:element type="xs:int" name="bofdValue"/>
+              <xs:element type="xs:string" name="creditFormat"/>
+              <xs:element type="xs:string" name="isBofdEndorsmentRecordGenerated"/>
+              <xs:element type="xs:string" name="isCreditReconRecordGenerated"/>
+              <xs:element type="xs:string" name="isImageAnalysisRecordGenerated"/>
+              <xs:element type="xs:string" name="isPayeeEndorsementRecordGenerated"/>
+              <xs:element type="xs:int" name="immediateOrigAba"/>
+              <xs:element type="xs:int" name="immediateDestAba"/>
+              <xs:element type="xs:string" name="immediateDestName"/>
+              <xs:element type="xs:string" name="immediateOrigName"/>
+              <xs:element type="xs:string" name="fileIdModifier"/>
+              <xs:element type="xs:string" name="businessDate"/>
+              <xs:element type="xs:string" name="createDate"/>
+              <xs:element type="xs:short" name="createTime"/>
+              <xs:element type="xs:string" name="iclRecordTypeIndicator"/>
+              <xs:element type="xs:string" name="iclDocumentationTypeIndicator"/>
+              <xs:element type="xs:byte" name="iclCollectionType"/>
+              <xs:element type="xs:string" name="iclrRecordTypeIndicator"/>
+              <xs:element type="xs:string" name="iclrDocumentationTypeIndicator"/>
+              <xs:element type="xs:byte" name="iclrCollectionType"/>
+              <xs:element type="xs:int" name="destinationAba"/>
+              <xs:element type="xs:int" name="eceInstitutionAba"/>
+              <xs:element type="xs:string" name="fedWorkType"/>
+              <xs:element type="xs:string" name="isType61ToBeginNewBundle"/>
+              <xs:element type="xs:int" name="returnAba"/>
+              <xs:element type="xs:short" name="checksPerBundle"/>
+              <xs:element type="xs:int" name="creditBankAba"/>
+              <xs:element type="xs:int" name="creditAccount"/>
+              <xs:element type="xs:short" name="creditSerial"/>
+              <xs:element type="xs:int" name="endorsementBofdAba"/>
+              <xs:element type="xs:byte" name="endorsementCount"/>
+              <xs:element type="xs:string" name="endorsementAbaList"/>
+              <xs:element type="xs:string" name="endorsementBofdDate"/>
+              <xs:element type="xs:string" name="endorsementSecondaryDate"/>
+              <xs:element type="xs:string" name="invalidImages"/>
+              <xs:element type="xs:byte" name="checksPerTestCase"/>
+              <xs:element type="xs:byte" name="imageTestCaseMatrix"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="retailFormats">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="checkFormat"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="businessFormats">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="checkFormat"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

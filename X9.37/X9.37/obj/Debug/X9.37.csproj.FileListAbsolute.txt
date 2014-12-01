@@ -1,0 +1,4 @@
+C:\Users\jjv\Documents\Visual Studio 2010\Projects\X9.37\X9.37\bin\Debug\X9.37.dll
+C:\Users\jjv\Documents\Visual Studio 2010\Projects\X9.37\X9.37\bin\Debug\X9.37.pdb
+C:\Users\jjv\Documents\Visual Studio 2010\Projects\X9.37\X9.37\obj\Debug\X9.37.dll
+C:\Users\jjv\Documents\Visual Studio 2010\Projects\X9.37\X9.37\obj\Debug\X9.37.pdb

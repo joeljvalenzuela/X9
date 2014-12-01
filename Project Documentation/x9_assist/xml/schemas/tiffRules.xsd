@@ -1,0 +1,210 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tiffrules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="tiffControls">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="endianFormat"/>
+              <xs:element type="xs:string" name="ifdOnWordBoundary"/>
+              <xs:element type="xs:string" name="requiredAscendingTags"/>
+              <xs:element type="xs:string" name="duplicateTagsAllowed"/>
+              <xs:element type="xs:string" name="privateTagsAllowed"/>
+              <xs:element type="xs:string" name="privateDuplicateTagsAllowed"/>
+              <xs:element type="xs:string" name="multiStripAllowed"/>
+              <xs:element type="xs:string" name="validateEOFB"/>
+              <xs:element type="xs:float" name="imageMinWidth"/>
+              <xs:element type="xs:float" name="imageMaxWidth"/>
+              <xs:element type="xs:float" name="imageMinHeight"/>
+              <xs:element type="xs:float" name="imageMaxHeight"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tiffEdits">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tag254">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag256">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="rule"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag257">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="rule"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag258">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag259">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag262">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag263">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag266">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag273">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag274">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag277">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag278">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="rule"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag279">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag282">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag283">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag284">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag293">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="tag296">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="type"/>
+                    <xs:element type="xs:byte" name="count"/>
+                    <xs:element type="xs:string" name="values"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mandatoryTiffTags">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:short" name="tag" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tiffTagDescriptions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tiffTag" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:short" name="tag"/>
+                    <xs:element type="xs:string" name="description"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

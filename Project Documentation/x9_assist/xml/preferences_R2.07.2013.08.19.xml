@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <copyright>X9Ware LLC 2012</copyright>
+ <product>X9Vision</product>
+ <release>R2.07</release>
+ <documentIdentifier>preferences</documentIdentifier>
+ <timestamp>20131029_131943_654</timestamp>
+ <userPreferences>
+  <scrubConfiguration></scrubConfiguration>
+  <makeReformatter></makeReformatter>
+  <generateConfiguration></generateConfiguration>
+  <printImageConfiguration></printImageConfiguration>
+  <isMakeAll>true</isMakeAll>
+  <makeNumberOfItems>1000</makeNumberOfItems>
+  <isShowCheckViewerFields>false</isShowCheckViewerFields>
+  <isShowGeneratePanelFromMake>false</isShowGeneratePanelFromMake>
+  <repackageFileOrder>0</repackageFileOrder>
+  <repackageItemsPerBundle>300</repackageItemsPerBundle>
+  <isExportViewEnabled>true</isExportViewEnabled>
+  <exportCsvDefaultMode>0</exportCsvDefaultMode>
+ </userPreferences>
+ <guiMonitors>
+  <guiMonitor>
+   <monitorSize>1920x1080</monitorSize>
+   <guiFrame>
+    <frameName>About</frameName>
+    <frameWidth>1030</frameWidth>
+    <frameHeight>580</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Bind Configurations</frameName>
+    <frameWidth>960</frameWidth>
+    <frameHeight>630</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Check Viewer</frameName>
+    <frameWidth>1600</frameWidth>
+    <frameHeight>1040</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Clone</frameName>
+    <frameWidth>500</frameWidth>
+    <frameHeight>400</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Configuration Editor</frameName>
+    <frameWidth>1020</frameWidth>
+    <frameHeight>430</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Delete</frameName>
+    <frameWidth>570</frameWidth>
+    <frameHeight>280</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Duplicate Items Detector</frameName>
+    <frameWidth>475</frameWidth>
+    <frameHeight>310</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Excel Exporter</frameName>
+    <frameWidth>700</frameWidth>
+    <frameHeight>500</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Exporter</frameName>
+    <frameWidth>720</frameWidth>
+    <frameHeight>530</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Find</frameName>
+    <frameWidth>785</frameWidth>
+    <frameHeight>540</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Generate</frameName>
+    <frameWidth>1150</frameWidth>
+    <frameHeight>600</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Generate from File</frameName>
+    <frameWidth>1100</frameWidth>
+    <frameHeight>500</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Image Viewer</frameName>
+    <frameWidth>1100</frameWidth>
+    <frameHeight>600</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Import</frameName>
+    <frameWidth>570</frameWidth>
+    <frameHeight>500</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>License Editor</frameName>
+    <frameWidth>680</frameWidth>
+    <frameHeight>350</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Make Items</frameName>
+    <frameWidth>1150</frameWidth>
+    <frameHeight>600</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Mapping Editor</frameName>
+    <frameWidth>880</frameWidth>
+    <frameHeight>400</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Merge</frameName>
+    <frameWidth>480</frameWidth>
+    <frameHeight>400</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>ModCheck Editor</frameName>
+    <frameWidth>940</frameWidth>
+    <frameHeight>440</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Modify</frameName>
+    <frameWidth>1880</frameWidth>
+    <frameHeight>550</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Options Editor</frameName>
+    <frameWidth>1010</frameWidth>
+    <frameHeight>660</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Print Images</frameName>
+    <frameWidth>870</frameWidth>
+    <frameHeight>500</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Print Tables</frameName>
+    <frameWidth>700</frameWidth>
+    <frameHeight>500</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>RT Check Digit Calculator</frameName>
+    <frameWidth>470</frameWidth>
+    <frameHeight>240</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Repackage</frameName>
+    <frameWidth>650</frameWidth>
+    <frameHeight>440</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Repair Options</frameName>
+    <frameWidth>550</frameWidth>
+    <frameHeight>465</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Routing Editor</frameName>
+    <frameWidth>780</frameWidth>
+    <frameHeight>530</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Routing List Editor</frameName>
+    <frameWidth>560</frameWidth>
+    <frameHeight>430</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Scrub</frameName>
+    <frameWidth>585</frameWidth>
+    <frameHeight>520</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Search</frameName>
+    <frameWidth>885</frameWidth>
+    <frameHeight>580</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Use Case Editor</frameName>
+    <frameWidth>650</frameWidth>
+    <frameHeight>585</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>Writer</frameName>
+    <frameWidth>440</frameWidth>
+    <frameHeight>360</frameHeight>
+   </guiFrame>
+   <guiFrame>
+    <frameName>X9Vision</frameName>
+    <frameWidth>1920</frameWidth>
+    <frameHeight>1040</frameHeight>
+   </guiFrame>
+   <guiDivider>
+    <splitPaneName>DashBoardSplitPane</splitPaneName>
+    <splitPanePercent>.846</splitPanePercent>
+   </guiDivider>
+   <guiDivider>
+    <splitPaneName>FeedbackSplitPane</splitPaneName>
+    <splitPanePercent>.787</splitPanePercent>
+   </guiDivider>
+   <guiDivider>
+    <splitPaneName>MainSplitPane</splitPaneName>
+    <splitPanePercent>.179</splitPanePercent>
+   </guiDivider>
+  </guiMonitor>
+ </guiMonitors>
+</preferences>
+

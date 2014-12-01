@@ -1,0 +1,34 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="guiPreferences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="copyright"/>
+        <xs:element type="xs:string" name="product"/>
+        <xs:element type="xs:string" name="release"/>
+        <xs:element type="xs:string" name="timestamp"/>
+        <xs:element name="guiMonitors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="guiMonitor">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="monitorSize"/>
+                    <xs:element name="guiFrame" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="frameName"/>
+                          <xs:element type="xs:short" name="frameWidth"/>
+                          <xs:element type="xs:short" name="frameHeight"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

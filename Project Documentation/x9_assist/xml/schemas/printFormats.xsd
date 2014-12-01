@@ -1,0 +1,37 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="x9printImage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="copyright"/>
+        <xs:element type="xs:string" name="product"/>
+        <xs:element type="xs:string" name="release"/>
+        <xs:element type="xs:string" name="timestamp"/>
+        <xs:element type="xs:string" name="pdfTemplate"/>
+        <xs:element type="xs:byte" name="rows"/>
+        <xs:element type="xs:byte" name="cols"/>
+        <xs:element type="xs:string" name="pageTitle"/>
+        <xs:element type="xs:float" name="topBorder"/>
+        <xs:element type="xs:float" name="bottomBorder"/>
+        <xs:element type="xs:float" name="leftBorder"/>
+        <xs:element type="xs:float" name="rightBorder"/>
+        <xs:element type="xs:float" name="horizontalGap"/>
+        <xs:element type="xs:float" name="verticalGap"/>
+        <xs:element name="printImageFields">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="printImageField" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="fieldName"/>
+                    <xs:element type="xs:float" name="xCoordinate"/>
+                    <xs:element type="xs:float" name="yCoordinate"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
